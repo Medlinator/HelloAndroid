@@ -1,72 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     tools:context=".MainActivity">
 
     <ImageView
+        android:id="@+id/image"
         android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:src="@drawable/growwithudacity"
+        android:layout_height="300dp"
         android:scaleType="centerCrop"
-        android:id="@+id/image" />
+        android:src="@drawable/growwithudacity" />
 
     <TextView
+        android:id="@+id/business-name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/image"
         android:fontFamily="sans-serif-light"
-        android:paddingTop="30dp"
+        android:textColor="#FFFFFF"
         android:paddingLeft="20dp"
-        android:text="Udacity"
-        android:textSize="16sp"
-        android:id="@+id/business-name" />
+        android:paddingTop="30dp"
+        android:text="@string/business_name"
+        android:textSize="34sp" />
 
     <TextView
+        android:id="@+id/business-address"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/business-name"
         android:fontFamily="sans-serif-light"
-        android:paddingTop="15dp"
+        android:textColor="#FFFFFF"
         android:paddingLeft="20dp"
-        android:text="2465 Latham St"
-        android:textSize="14sp"
-        android:id="@+id/business-address" />
+        android:paddingTop="15dp"
+        android:text="@string/business_address"
+        android:textSize="20sp" />
 
     <TextView
+        android:id="@+id/business-city-state-zip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/business-address"
         android:fontFamily="sans-serif-light"
-        android:paddingTop="10dp"
+        android:textColor="#FFFFFF"
         android:paddingLeft="20dp"
-        android:text="Mountain View, CA 94043"
-        android:textSize="14sp"
-        android:id="@+id/business-city-state-zip" />
+        android:paddingTop="10dp"
+        android:text="@string/business_city_state_zip"
+        android:textSize="20sp" />
 
     <TextView
+        android:id="@+id/business-phone-number"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/business-city-state-zip"
         android:fontFamily="sans-serif-light"
-        android:paddingTop="10dp"
+        android:textColor="#FFFFFF"
         android:paddingLeft="20dp"
-        android:text="650-555-5555"
-        android:textSize="14sp"
-        android:id="@+id/business-phone-number" />
+        android:paddingTop="10dp"
+        android:text="@string/business_phone_number"
+        android:textSize="20sp" />
 
     <TextView
+        android:id="@+id/business-website"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/business-phone-number"
+        android:autoLink="web"
         android:fontFamily="sans-serif-light"
-        android:paddingTop="10dp"
         android:paddingLeft="20dp"
-        android:text="www.udacity.com"
-        android:textSize="14sp"
-        android:id="@+id/business-website" />
+        android:paddingTop="10dp"
+        android:text="@string/business_website"
+        android:textSize="20sp"
+        android:textColorLink="#FFFFFF"/>
 
 
 </RelativeLayout>
